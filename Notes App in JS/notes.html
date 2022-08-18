@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Notes App</title>
+    <link rel="stylesheet" href="notes.css">
+    <script src="notes.js"></script>
+</head>
+<body>    
+    <div class="addNotesContanier" id="addNotesContanier">
+        <div class="addNoteBar" id="addNoteBar">
+            <h3>Add your notes here</h3>
+            <button id="btnAddNote" onclick="createNoteShow()">Add Note</button>
+        </div>
+        <div class="addNoteContent" id="addNoteContent">
+            <h5>Add note title...</h5>
+            <input type="text" id="txtNoteTitle" placeholder="Title">
+            <br>
+            <br>
+            <h5>Add your note here...</h5>
+            <input type="text" id="txtNoteContent" placeholder="Your Note">
+            <br>
+            <button id="btnSaveNote" onclick="addnotes()">Save</button>
+        </div>
+    </div>
+
+    <div class="SavedNotes-Contanier" id="SavedNotesContanier">
+        <div class="savednotes-tittle">
+            <h2>Saved Notes</h2>
+        </div>
+        <div class="notes-here" id="noteshere">
+
+        </div>
+    </div>
+</body>
+
+</html>
